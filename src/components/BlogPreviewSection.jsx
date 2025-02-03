@@ -42,9 +42,9 @@ export default function BlogPreviewSection() {
           </div>
 
           <div className="md:w-1/3 flex flex-col gap-6">
-            {[1, 2, 3, 4].map((item) => (
-              <a href="#">
-                <div key={item} className="border-t p-4 pt-6 hover:bg-gray-50">
+            {[1, 2, 3, 4].map((item, index) => (
+              <a href="#" key={index}>
+                <div className="border-t p-4 pt-6 hover:bg-gray-50">
                   <div className="flex justify-between items-start mb-2">
                     <div>
                       <p className="text-primary font-semibold text-sm">Tech insights</p>
