@@ -2,8 +2,6 @@ import Image from "next/image";
 import { Menu } from 'lucide-react';
 import { Inter } from "next/font/google";
 
-import '@/styles/index.css'
-
 const interSans = Inter({
   variable: "--font-geist-sans",
   subsets: ["latin"],
