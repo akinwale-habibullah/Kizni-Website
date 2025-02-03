@@ -1,28 +1,28 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
+import Navbar from "@/components/Navbar"
+import Hero from "@/components/Hero"
+import DiscoverSection from "@/components/DiscoverSection"
+import OfferingsSection from "@/components/OfferingsSection"
+import IntegratedToolsSection from "@/components/IntegratedToolsSection"
+import WhyUsSection from "@/components/WhyUsSection"
+import FeatureHighlightsSection from "@/components/FeatureHighlightsSection"
+import BlogPreviewSection from "@/components/BlogPreviewSection"
+import Process from "@/components/Process"
+import Footer from "@/components/Footer"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export default function Home() {
+export default function Page() {
   return (
-    <div
-      className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
-    >
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <ol className="list-inside list-decimal text-7xl text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          Creating Kizni...
-        </ol>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-      </footer>
+    <div className="min-h-svh flex flex-col">
+      <Navbar />
+      <Hero />
+      <DiscoverSection />
+      <OfferingsSection />
+      <IntegratedToolsSection />
+      <WhyUsSection />
+      <FeatureHighlightsSection />
+      <BlogPreviewSection />
+      <Process />
+      <Footer />
     </div>
-  );
+  )
 }
+
