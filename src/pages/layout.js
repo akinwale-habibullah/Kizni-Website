@@ -11,10 +11,10 @@ const geistMono = Geist_Mono({
   variable: '--font-mono',
 })
 
-export const metadata = {
-  title: 'Kizni',
-  description: 'Experts in open source business applications',
-}
+// export const metadata = {
+//   title: 'Kizni',
+//   description: 'Experts in open source business applications',
+// }
 
 export const viewport = {
   viewportFit: "cover",
