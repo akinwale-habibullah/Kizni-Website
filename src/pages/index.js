@@ -14,7 +14,7 @@ export default function Page() {
   return (
     <div>
       <Head>
-        <title>Kizni</title>
+        <title>Kizni - Open Source Business Applications</title>
       </Head>
       <div className="min-h-svh flex flex-col">
         <Navbar />
