@@ -9,7 +9,7 @@ export default function BlogPreviewSection() {
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 border-t">
         <div className="flex justify-between items-end mb-12 pt-8">
           {/* <h2 className="text-5xl md:text-8xl flex-1">Get a sneak peek into our minds</h2> */}
-          <h2 className="text-5xl md:text-8xl flex-1">See how we think</h2>
+          <h2 className="text-5xl md:text-8xl flex-1">See How We Think</h2>
           <Button size="lg" variant="outline">View all articles</Button>
         </div>
 

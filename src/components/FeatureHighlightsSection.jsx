@@ -26,7 +26,7 @@ const featureData = [
 export default function FeatureHighlightsSection() {
   return (
     <section className="w-full">
-      <div className="w-5/6 py-60 rounded-xl border max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-5/6 py-60 rounded-xl border border-green-500 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-center items-center md:flex-row gap-8">
           {featureData.map((feature, index) => (
             <div key={index} className="flex flex-col flex-1 justify-between items-center h-96 bg-white rounded-lg overflow-hidden border border-gray-200 shadow-lg">

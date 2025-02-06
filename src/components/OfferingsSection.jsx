@@ -9,6 +9,12 @@ const offeringsData = [
     bgColor: "bg-blue-100",
   },
   {
+    title: "Automate your school operations",
+    description: "Digital transformation for schools or educational institutions, which helps you focus on what matters, teaching!",
+    icon: "/placeholder.svg?height=50&width=50",
+    bgColor: "bg-green-100",
+  },
+  {
     title: "Relieve your logistics bottlenecks",
     description: "Optimize your supply chain and inventory management for smoother operations and reduced costs.",
     icon: "/placeholder.svg?height=50&width=50",
@@ -45,7 +51,7 @@ export default function OfferingsSection() {
     <section className="py-32 bg-white">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <p className="text-sm font-semibold text-primary mb-2">Start Simply, Grow Smoothly</p>
+          <p className="text-sm text-gray-400 font-semibold text-primary mb-2">Start Simply, Grow Smoothly</p>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Tools for your everyday challenges</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Whether you're looking to manage your finances, optimize your operations, build customer loyalty or better

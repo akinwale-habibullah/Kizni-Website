@@ -32,7 +32,7 @@ export default function WhyUsSection() {
     <section className="py-32 bg-white">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <p className="text-sm font-semibold text-primary mb-2">Where our team makes a difference</p>
+          <p className="text-sm text-gray-400 font-semibold text-primary mb-2">Where our team makes a difference</p>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Why Kizni</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             At Kizni, we don't just offer solutions; we deliver partnerships. Our team's expertise, coupled with our

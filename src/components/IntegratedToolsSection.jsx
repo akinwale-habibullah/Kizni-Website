@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button"
 
 export default function IntegratedToolsSection() {
   return (
-    <section className="py-32 bg-gray-100">
+    <section className="py-40 bg-gray-100">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
           <div className="p-8 md:p-12">
-            <p className="text-sm font-semibold text-primary mb-2">A unique synergy for your teams</p>
+            <p className="text-sm text-gray-400 font-semibold text-primary mb-2">A unique synergy for your teams</p>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Tools that actually work together</h2>
             <div className="flex flex-col md:flex-row gap-8 items-center">
               <div className="md:w-1/2">

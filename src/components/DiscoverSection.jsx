@@ -5,6 +5,13 @@ import Image from "next/image"
 
 const offeringsData = [
   {
+    id: "erp-schools",
+    title: "ERP for Schools",
+    content:
+      "Efficiently manage your educational institution with our specialized ERP solution for schools and colleges.",
+    image: "/placeholder.svg?height=400&width=400",
+  },
+  {
     id: "erp-sme",
     title: "ERP for SMEs",
     content:
@@ -19,13 +26,6 @@ const offeringsData = [
     image: "/placeholder.svg?height=400&width=400",
   },
   {
-    id: "erp-schools",
-    title: "ERP for Schools",
-    content:
-      "Efficiently manage your educational institution with our specialized ERP solution for schools and colleges.",
-    image: "/placeholder.svg?height=400&width=400",
-  },
-  {
     id: "omnichannel",
     title: "Omnichannel",
     content: "Create seamless customer experiences across all channels with our integrated omnichannel solution.",
@@ -37,8 +37,8 @@ export default function DiscoverSection() {
   const [openItem, setOpenItem] = useState("erp-sme")
 
   return (
-    <section className="py-32 bg-gray-50">
-      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-16">
+      <div className="bg-gray-100 rounded-3xl max-w-screen-xl mx-auto py-32 px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Discover the power of Open Source</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -49,12 +49,14 @@ export default function DiscoverSection() {
 
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="lg:w-1/2">
-            <h3 className="text-lg font-semibold text-primary mb-2">Explore our core offerings</h3>
-            <h4 className="text-2xl font-bold mb-6">The strength of the right tools</h4>
+            <h3 className="text-sm text-gray-400 font-bold mb-2">Explore our core offerings</h3>
+            <h4 className="text-3xl mb-6">The strength of the right tools</h4>
             <Accordion type="single" collapsible value={openItem} onValueChange={setOpenItem}>
               {offeringsData.map((offering) => (
                 <AccordionItem key={offering.id} value={offering.id}>
-                  <AccordionTrigger>{offering.title}</AccordionTrigger>
+                  <AccordionTrigger>
+                    <p className="text-base">{offering.title}</p>
+                  </AccordionTrigger>
                   <AccordionContent>
                     <p className="mb-4">{offering.content}</p>
                     <Button>Explore Features</Button>
