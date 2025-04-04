@@ -35,8 +35,7 @@ export default function WhyUsSection() {
           <p className="text-sm text-gray-400 font-semibold text-primary mb-2">Where our team makes a difference</p>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Why Kizni</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            At Kizni, we don't just offer solutions; we deliver partnerships. Our team's expertise, coupled with our
-            commitment to your success, sets us apart in the industry.
+            At Kizni, we don't just offer solutions; we deliver partnerships. Our team's expertise, coupled with our commitment to your success, sets us apart in the industry.
           </p>
         </div>
 
@@ -47,19 +46,22 @@ export default function WhyUsSection() {
               className={`${item.bgColor} p-6 h-[280px] rounded-lg shadow-lg ${
                 index === 0 || index === 3 ? "md:col-span-2" : ""}`}
             >
-              <div className="h-full flex flex-col justify-end">
-                <div className="flex items-end justify-between group">
-                  <div>
-                    <h3 className="text-2xl font-semibold mb-2 group-hover:-translate-y-4 transition-transform duration-300">
+              <div className="group relative h-full flex flex-col justify-end overflow-hidden">
+                <div className="flex items-center justify-between translate-y-0 group-hover:-translate-y-28 transition-all duration-300 ease-in-out">
+                  <div className="flex flex-row justify-between items-center w-full ">
+                    <h3 className="text-2xl font-semibold">
                       {item.title}
                     </h3>
-                    <p className="hidden text-gray-700 mt-2 opacity-0 group-hover:block group-hover:opacity-100 transition-opacity duration-300">
-                      {item.description}
-                    </p>
+                    <div className="bg-primary text-white p-2 rounded-full border">
+                      <ArrowUpRight size={24} />
+                    </div>
                   </div>
-                  <div className="bg-primary text-white p-2 rounded-full">
-                    <ArrowUpRight size={24} />
-                  </div>
+                </div>
+
+                <div className="absolute opacity-0 transform overflow-hidden group-hover:opacity-100 group-hover:-translate-y-4 transition-all duration-300 ease-in-out">
+                  <p className="text-gray-700">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             </div>

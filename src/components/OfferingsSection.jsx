@@ -63,18 +63,16 @@ export default function OfferingsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {offeringsData.map((offering, index) => (
             <div key={index} className={`relative overflow-hidden rounded-lg shadow-lg group ${offering.bgColor} h-[376px]`}>
-              <div className="p-6 h-full flex flex-col justify-end transition-all duration-300">
-                <div className="flex items-center justify-between mt-auto group-hover:translate-y-[-20px] transition-transform duration-300">
+              <div className="group p-6 h-full flex flex-col justify-end ">
+                <div className="flex items-center justify-between mt-auto translate-y-[60px] group-hover:translate-y-[-20px] transition-transform duration-300">
                   <h3 className="text-xl font-semibold">{offering.title}</h3>
                   <div className="bg-primary text-white p-2 rounded-full">
                     <ArrowUpRight size={24} />
                   </div>
                 </div>
-                <div>
 
-                <p className="text-gray-600 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  {offering.description}
-                </p>
+                <div className="opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out">
+                  <p className="text-gray-600 mt-4">{offering.description}</p>
                 </div>
               </div>
             </div>

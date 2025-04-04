@@ -9,27 +9,27 @@ const offeringsData = [
     title: "ERP for Schools",
     content:
       "Efficiently manage your educational institution with our specialized ERP solution for schools and colleges.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/images/teacher-in-class.jpg",
   },
   {
     id: "erp-sme",
     title: "ERP for SMEs",
     content:
       "Streamline your business operations with our comprehensive ERP solution tailored for small and medium enterprises.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/images/sme.jpg",
   },
   {
     id: "crm-sme",
     title: "CRM for SMEs",
     content:
       "Enhance customer relationships and boost sales with our powerful CRM system designed for growing businesses.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/images/customer.jpg",
   },
   {
     id: "omnichannel",
     title: "Omnichannel",
     content: "Create seamless customer experiences across all channels with our integrated omnichannel solution.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/images/omni-channel.jpg",
   },
 ]
 
@@ -59,7 +59,7 @@ export default function DiscoverSection() {
                   </AccordionTrigger>
                   <AccordionContent>
                     <p className="mb-4">{offering.content}</p>
-                    <Button>Explore Features</Button>
+                    <Button className="rounded-full">Explore Features</Button>
                   </AccordionContent>
                 </AccordionItem>
               ))}
@@ -67,8 +67,8 @@ export default function DiscoverSection() {
           </div>
           <div className="lg:w-1/2 flex items-center justify-center">
             <Image
-              src={offeringsData.find((item) => item.id === openItem)?.image || ""}
-              alt={offeringsData.find((item) => item.id === openItem)?.title || ""}
+              src={offeringsData.find((item) => item.id === openItem)?.image || "/images/it-consultant.jpg"}
+              alt={offeringsData.find((item) => item.id === openItem)?.title || "it consultant"}
               width={400}
               height={400}
               className="rounded-lg shadow-lg"

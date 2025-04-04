@@ -16,11 +16,11 @@ export default function IntegratedToolsSection() {
                   management - that work together to simplify your day-to-day life and that of all your teams. Welcome
                   to an ecosystem where everything just works.
                 </p>
-                <Button size="lg">Book Demo</Button>
+                <Button size="lg" className="rounded-full">Book Demo</Button>
               </div>
               <div className="md:w-1/2">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/images/integrated-software-systems.jpg"
                   alt="Integrated Tools"
                   width={600}
                   height={400}

@@ -9,7 +9,7 @@ export default function BlogPreviewSection() {
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 border-t">
         <div className="flex justify-between items-end mb-12 pt-8">
           {/* <h2 className="text-5xl md:text-8xl flex-1">Get a sneak peek into our minds</h2> */}
-          <h2 className="text-5xl md:text-8xl flex-1">See How We Think</h2>
+          <h2 className="text-5xl md:text-8xl flex-1">Learn How We Think</h2>
           <Button size="lg" variant="outline">View all articles</Button>
         </div>
 
@@ -44,8 +44,8 @@ export default function BlogPreviewSection() {
           <div className="md:w-1/3 flex flex-col gap-6">
             {[1, 2, 3, 4].map((item, index) => (
               <a href="#" key={index}>
-                <div className="border-t p-4 pt-6 hover:bg-gray-50">
-                  <div className="flex justify-between items-start mb-2">
+                <div className="group border-0 border-t p-4 pt-6 hover:bg-gray-50 hover:border transition-all duration-100">
+                  <div className="flex justify-between items-start gap-2 mb-2">
                     <div>
                       <p className="text-primary font-semibold text-sm">Tech insights</p>
                       <p className="text-gray-500 text-sm">8 min read</p>
@@ -60,11 +60,10 @@ export default function BlogPreviewSection() {
                     />
                   </div>
 
-                  
                   <div className="flex justify-between items-center">
                     <div className="flex items-center gap-1">
                       <Avatar>
-                        <AvatarImage src="/placeholder.svg?height=24&width=24" alt="Akinwale Habib" />
+                        <AvatarImage src="/images/akinwale-habib.jpg" />
                         <AvatarFallback>AH</AvatarFallback>
                       </Avatar>
                       <span className="text-sm text-gray-600">by Akinwale Habib</span>
